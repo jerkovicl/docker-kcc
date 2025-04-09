@@ -33,7 +33,7 @@ RUN \
     libqt5x11extras5 && \
     echo "**** install pip ****" && \
     curl -fkSL https://bootstrap.pypa.io/pip/3.7/get-pip.py -o get-pip.py && \
-    python3 get-pip.py && \
+    python3.7 get-pip.py && \
     ln -s \
     /usr/bin/python3 \
     /usr/bin/python && \
