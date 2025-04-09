@@ -7,10 +7,10 @@ LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
 ARG DEBIAN_FRONTEND="noninteractive"
 ENV PYTHONIOENCODING=utf-8
 ENV APPNAME="KCC" UMASK_SET="022"
-ENV QT_DEBUG_PLUGINS 1
+ENV QT_DEBUG_PLUGINS=1
 
-ENV REPO_GIT "https://github.com/ciromattia/kcc"
-ENV KCC_VERSION "master"
+ENV REPO_GIT="https://github.com/ciromattia/kcc"
+ENV KCC_VERSION="master"
 
 RUN \
     echo "**** install packages ****" && \
