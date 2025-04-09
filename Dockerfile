@@ -17,7 +17,6 @@ RUN \
     apt-get update && \
     apt-get install -y \
     python3 \
-    python 3.7 \
     python3-distutils \
     python3-dev \
     gcc \
@@ -34,7 +33,7 @@ RUN \
     libqt5x11extras5 && \
     echo "**** install pip ****" && \
     curl -fkSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py && \
-    python3.7 get-pip.py && \
+    python3 get-pip.py && \
     ln -s \
     /usr/bin/python3 \
     /usr/bin/python && \
