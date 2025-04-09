@@ -17,6 +17,7 @@ RUN \
     apt-get update && \
     apt-get install -y \
     python3 \
+    python 3.7
     python3-distutils \
     python3-dev \
     gcc \
