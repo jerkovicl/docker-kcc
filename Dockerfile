@@ -11,7 +11,7 @@ ENV \
        HOME="/config" \
        NO_DECOR=1 \
        PIP_BREAK_SYSTEM_PACKAGES=1 \
-       QTWEBENGINE_DISABLE_SANDBOX="1" \
+       QTWEBENGINE_DISABLE_SANDBOX="1"
 
 # install system dependencies
 RUN apt-get update
@@ -38,7 +38,7 @@ RUN apt-get install -y \
         python3 \
         python3-xdg \
         python3-pip \
-        python3-dev
+        python3-dev \
         libjpeg-dev
 
 # install kindlegen
