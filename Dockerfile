@@ -6,7 +6,7 @@ LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
 ENV \
        TITLE="KCC" \
        GIT_REPO="https://github.com/ciromattia/kcc" \
-       GIT_BRANCH="master"
+       GIT_BRANCH="master" \
        CUSTOM_PORT="$CUSTOM_PORT" \
        HOME="/config" \
        NO_DECOR=1 \
