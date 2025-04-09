@@ -1,0 +1,6 @@
+.git
+.gitignore
+.github
+!github/workflows/build.yml
+.gitattributes
+#README.md
