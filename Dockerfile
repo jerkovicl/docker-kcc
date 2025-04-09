@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-guacgui:6be0127d-ls90
+FROM ghcr.io/linuxserver/baseimage-guacgui
 
 # set version label
 LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
