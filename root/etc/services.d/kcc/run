@@ -7,7 +7,7 @@ with-contenv
 fdmove -c 2 1
 
 # Wait until openbox is running
-if {s6-svwait -t 10000 -U /var/run/s6/services/openbox/}
+if { s6-svwait -t 10000 -U /var/run/s6/services/openbox/ }
 
 #set umask
 importas UMASK_SET UMASK_SET
