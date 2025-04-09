@@ -7,4 +7,4 @@ echo '------------------------'
 echo '| Installing kcc       |'
 echo '------------------------'
 
-pip install "git+${REPO_GIT}@${KCC_VERSION}"
+pip3 install "git+${REPO_GIT}@${KCC_VERSION}"
