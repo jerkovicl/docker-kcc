@@ -1,8 +1,6 @@
+FROM ckleinsc/baseimage-kasmvnc-python
 # set version label
 LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
-
-FROM ckleinsc/baseimage-kasmvnc-python
-
 # environment settings
 ENV \
        TITLE="KCC" \
