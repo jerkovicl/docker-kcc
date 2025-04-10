@@ -7,8 +7,7 @@ ENV \
        TITLE="KCC" \
        GIT_REPO="https://github.com/ciromattia/kcc" \
        GIT_BRANCH="master" \
-       #CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
-       CUSTOM_PORT="8313" \
+       CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
        HOME="/config" \
        FM_HOME="/config" \
        NO_DECOR=1 \
