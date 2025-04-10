@@ -7,15 +7,17 @@ ENV \
        TITLE="KCC" \
        GIT_REPO="https://github.com/ciromattia/kcc" \
        GIT_BRANCH="master" \
-       CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
+       #CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
+       CUSTOM_PORT="8313" \
        HOME="/config" \
+       FM_HOME="/config" \
        NO_DECOR=1 \
        PIP_BREAK_SYSTEM_PACKAGES=1 \
        QTWEBENGINE_DISABLE_SANDBOX="1"
 
 # install system dependencies
-RUN apt-get update
-RUN apt-get install -y \
+RUN apt-get update && \
+apt-get install -y \
     dbus \
     fcitx-rime \
     fonts-wqy-microhei \
