@@ -4,16 +4,21 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
 # set version label
 LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
 # environment settings
-ENV \
-       TITLE="KCC" \
-       GIT_REPO="https://github.com/ciromattia/kcc" \
-       GIT_BRANCH="master" \
-       CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
-       HOME="/config" \
-       FM_HOME="/config" \
-       NO_DECOR=1 \
-       PIP_BREAK_SYSTEM_PACKAGES=1 \
-       QTWEBENGINE_DISABLE_SANDBOX="1"
+ENV TITLE="KCC" \
+    PUID=${PUID} \
+    PGID=${PGID} \
+    TZ=${TZ} \
+    UMASK=002 \
+    GIT_REPO="https://github.com/ciromattia/kcc" \
+    GIT_BRANCH="master" \
+    CUSTOM_PORT="${CUSTOM_PORT:-8313}" \
+    CUSTOM_USER=${CUSTOM_USER:-abc} \
+    PASSWORD=${PASSWORD:-abc} \
+    HOME="/config" \
+    FM_HOME="/config" \
+    NO_DECOR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1 \
+    QTWEBENGINE_DISABLE_SANDBOX="1"
 
 # install system dependencies
 RUN apt-get update && \
