@@ -1,4 +1,5 @@
-#FROM ckleinsc/baseimage-kasmvnc-python
+# syntax=docker/dockerfile:1
+# check=error=true
 FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
 # set version label
 LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
@@ -17,27 +18,6 @@ ENV \
 # install system dependencies
 RUN apt-get update && \
 apt-get install -y \
-    dbus \
-    fcitx-rime \
-    fonts-wqy-microhei \
-    libnss3 \
-    libopengl0 \
-    libqpdf29t64 \
-    libxkbcommon-x11-0 \
-    libxcb-cursor0 \
-    libxcb-icccm4 \
-    libxcb-image0 \
-    libxcb-keysyms1 \
-    libxcb-randr0 \
-    libxcb-render-util0 \
-    libxcb-xinerama0 \
-    poppler-utils \
-    python3 \
-    python3-xdg \
-    ttf-wqy-zenhei \
-    wget \
-    xz-utils \
-       #####
         gcc \
         cmake \
         unzip \
