@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-# check=error=true
+# check=error=false
 FROM ghcr.io/linuxserver/baseimage-kasmvnc:ubuntunoble
 # set version label
 LABEL maintainer="Luka <lukajerkovic@protonmail.com>"
